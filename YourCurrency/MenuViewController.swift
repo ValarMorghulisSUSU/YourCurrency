@@ -168,7 +168,8 @@ class MenuViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "tableVC") as! CurrencyTableViewController
         let date = Calendar.current.date(from:DateComponents(year: now.year, month: now.month, day:1))!
-        
+        vc.title = "Курс доллара"
+
         let strdateb = dateFormatter.string(from: date)
         let strdatee = dateFormatter.string(from: Date())
         vc.newURL(url: "http://cbr.ru/scripts/XML_dynamic.asp?date_req1=\(strdateb)&date_req2=\(strdatee)&VAL_NM_RQ=R01235")
@@ -179,6 +180,7 @@ class MenuViewController: UIViewController {
     {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "tableVC") as! CurrencyTableViewController
+        vc.title = "Курс доллара"
         var date = dp1.date
         let strdateb = dateFormatter.string(from: date)
         date = dp2.date
