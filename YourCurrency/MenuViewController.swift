@@ -20,7 +20,6 @@ class MenuViewController: UIViewController {
             return self == .open ? .closed: .open
         }
     }
-    @IBOutlet weak var openTableView: UIButton!
     @IBOutlet weak var setDate: UIButton!
     @IBOutlet weak var setValue: UIButton!
     
@@ -55,7 +54,7 @@ class MenuViewController: UIViewController {
         } else {
         textField.text = String(UserSettings.userValue)
         }
-        
+        textField.delegate = self
         dateFormatter.dateFormat = "dd/MM/yyyy"
         fetchData()
     }
@@ -189,5 +188,19 @@ class MenuViewController: UIViewController {
     }
     @IBAction func setValue(_ sender: UIButton) {
         UserSettings.userValue = Double(textField.text!)
+    }
+    
+}
+
+
+
+
+
+extension MenuViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let aSet = NSCharacterSet(charactersIn:"0123456789.,").inverted
+        let compSepByCharInSet = string.components(separatedBy: aSet)
+        let numberFiltered = compSepByCharInSet.joined(separator: "")
+        return string == numberFiltered
     }
 }
