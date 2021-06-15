@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		0312AB7A26784246009A200D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312AB7926784246009A200D /* AppDelegate.swift */; };
 		0312AB7C26784246009A200D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312AB7B26784246009A200D /* SceneDelegate.swift */; };
-		0312AB7E26784246009A200D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312AB7D26784246009A200D /* ViewController.swift */; };
-		0312AB8126784246009A200D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0312AB7F26784246009A200D /* Main.storyboard */; };
 		0312AB8326784246009A200D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0312AB8226784246009A200D /* Assets.xcassets */; };
 		0312AB8626784246009A200D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0312AB8426784246009A200D /* LaunchScreen.storyboard */; };
+		0312AB93267843A0009A200D /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312AB92267843A0009A200D /* CurrencyTableViewCell.swift */; };
+		0312AB96267843D8009A200D /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312AB95267843D8009A200D /* XMLParser.swift */; };
+		0312AB992678469C009A200D /* CurrencyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312AB982678469B009A200D /* CurrencyTableViewController.swift */; };
+		0312ABB626789ADC009A200D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312ABB526789ADC009A200D /* MenuViewController.swift */; };
+		03ACCD7E2678A39B006665B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03ACCD7D2678A39B006665B0 /* Main.storyboard */; };
+		03ACCD842678EBED006665B0 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ACCD832678EBED006665B0 /* UserSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0312AB7626784246009A200D /* YourCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0312AB7926784246009A200D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0312AB7B26784246009A200D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0312AB7D26784246009A200D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0312AB8026784246009A200D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0312AB8226784246009A200D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0312AB8526784246009A200D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0312AB8726784246009A200D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0312AB92267843A0009A200D /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		0312AB95267843D8009A200D /* XMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
+		0312AB982678469B009A200D /* CurrencyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewController.swift; sourceTree = "<group>"; };
+		0312ABB526789ADC009A200D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		03ACCD7D2678A39B006665B0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		03ACCD832678EBED006665B0 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +64,14 @@
 		0312AB7826784246009A200D /* YourCurrency */ = {
 			isa = PBXGroup;
 			children = (
+				03ACCD7D2678A39B006665B0 /* Main.storyboard */,
+				03ACCD832678EBED006665B0 /* UserSettings.swift */,
 				0312AB7926784246009A200D /* AppDelegate.swift */,
 				0312AB7B26784246009A200D /* SceneDelegate.swift */,
-				0312AB7D26784246009A200D /* ViewController.swift */,
-				0312AB7F26784246009A200D /* Main.storyboard */,
+				0312ABB526789ADC009A200D /* MenuViewController.swift */,
+				0312AB92267843A0009A200D /* CurrencyTableViewCell.swift */,
+				0312AB982678469B009A200D /* CurrencyTableViewController.swift */,
+				0312AB95267843D8009A200D /* XMLParser.swift */,
 				0312AB8226784246009A200D /* Assets.xcassets */,
 				0312AB8426784246009A200D /* LaunchScreen.storyboard */,
 				0312AB8726784246009A200D /* Info.plist */,
@@ -124,9 +136,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03ACCD7E2678A39B006665B0 /* Main.storyboard in Resources */,
 				0312AB8626784246009A200D /* LaunchScreen.storyboard in Resources */,
 				0312AB8326784246009A200D /* Assets.xcassets in Resources */,
-				0312AB8126784246009A200D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +149,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0312AB7E26784246009A200D /* ViewController.swift in Sources */,
+				0312AB992678469C009A200D /* CurrencyTableViewController.swift in Sources */,
+				0312ABB626789ADC009A200D /* MenuViewController.swift in Sources */,
+				0312AB93267843A0009A200D /* CurrencyTableViewCell.swift in Sources */,
 				0312AB7A26784246009A200D /* AppDelegate.swift in Sources */,
+				03ACCD842678EBED006665B0 /* UserSettings.swift in Sources */,
 				0312AB7C26784246009A200D /* SceneDelegate.swift in Sources */,
+				0312AB96267843D8009A200D /* XMLParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0312AB7F26784246009A200D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0312AB8026784246009A200D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0312AB8426784246009A200D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
